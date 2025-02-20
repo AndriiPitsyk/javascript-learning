@@ -1,11 +1,14 @@
 //Exercise 1:
-let currentTemperature;
-let isRaining = false;
-let cityName;
+const currentTemperature = 10;
+const isRaining = false;
+const cityName = 'Lviv';
+
+//Exercise 2:
+//Output: error
 
 //Exercise 3:
-let messageOne = 'some random text'
-let messageTwo = messageOne;
+const messageOne = 'some random text'
+const messageTwo = messageOne;
 console.log(messageOne)
 console.log(messageTwo)
 
