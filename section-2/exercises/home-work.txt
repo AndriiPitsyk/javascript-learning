@@ -12,8 +12,9 @@ userName = 'Test';
 console.log(userName);
 
 Exercise 3:
-Declare a let variable called messageOne, assign a value to the variable, then create another value called messageTwo
+Declare a let variable called messageOne,then in separate line assign a value to the variable, then create another value called messageTwo
 and copy value from messageOne. Show in console the value of messageOne and messageTwo;
+Please think when you create a second variable
 
 Exercise 4:
 What will show console log in the code bellow? Think without code execution.
