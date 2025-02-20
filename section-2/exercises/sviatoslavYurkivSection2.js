@@ -35,9 +35,9 @@ console.log(`Hello, my name is ${name} and I'm ${age} years old`)
 
 // Exercise 7:
 
-console.log(5 == "5"); // true
-console.log(5 === "5"); // false - because of different types of values
-console.log(!false); // true - because "!" is an opposite operator
+//console.log(5 == "5"); // true
+//console.log(5 === "5"); // false - because of different types of values
+//console.log(!false); // true - because "!" is an opposite operator
 
 //Exercise 8:
 // personTwo.age -  show 33
