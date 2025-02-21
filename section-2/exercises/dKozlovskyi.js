@@ -7,7 +7,7 @@ const cityName = 'Lviv';
 //Output: error
 
 //Exercise 3:
-const messageOne = 'some random text'
+let messageOne = 'some random text'
 const messageTwo = messageOne;
 console.log(messageOne)
 console.log(messageTwo)
@@ -23,8 +23,8 @@ console.log(text.substring(6, 11));
 
 //Exercise 6:
 
-let name = "John"
-let age = 25
+const name = "John"
+const age = 25
 console.log(`Hello, my name is ${name} and I'm ${age} years old`)
 
 // Exercise 7:
