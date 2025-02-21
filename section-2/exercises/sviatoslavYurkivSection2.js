@@ -7,10 +7,8 @@ const cityName = "City";
 //Exercise 2: will be an error SyntaxError: Missing initializer in const declaration
 
 // Exercise 3:
-let messageOne;
-messageOne = 'Message 1';
-let messageTwo;
-messageTwo = messageOne
+let messageOne = 'Message 1';
+const messageTwo = messageOne
 console.log(messageOne)
 console.log(messageTwo)
 
