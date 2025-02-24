@@ -1,10 +1,10 @@
 
 //==========================
 // Exercise 1
-
-let currentTemperature = 0;
-let isRaining = false;
-let cityName = "Kyiv";
+                                                                                                                                                                                                       
+const currentTemperature = 0;
+const isRaining = false;
+const cityName = "Kyiv";
 
 //Exercise 2: - error because const variables must be assigned a value
 /*  What will show console log in the code bellow ? Think without code execution.
@@ -45,8 +45,8 @@ console.log(extractText); // Output: "World"
 
 //Exercise 6:
 const name = "John";
-const age1 = 25;
-const message = `Hello, my name is ${name} and I'm ${age1} years old.`;
+const age = 25;
+const message = `Hello, my name is ${name} and I'm ${age} years old.`;
 
 console.log(message);
 
