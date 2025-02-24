@@ -16,7 +16,7 @@ console.log(userName);  */
 let messageOne; // Declare the variable
 messageOne = "Hello, World!"; // Assign a value
 
-let messageTwo = messageOne; // Copy value from messageOne to messageTwo
+const messageTwo = messageOne; // Copy value from messageOne to messageTwo
 
 console.log(messageOne); // Hello, World!
 console.log(messageTwo); // Hello, World!
