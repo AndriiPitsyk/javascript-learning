@@ -104,5 +104,5 @@ const car2 = {
     year : 2017
 }
 
-const {brand} = car2;
-console.log(brand);
+const {brand, model} = car2;
+console.log(brand, model);
