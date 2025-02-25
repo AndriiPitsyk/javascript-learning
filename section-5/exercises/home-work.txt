@@ -87,18 +87,18 @@ function updateUser(user) {
   // Your code here
 }
 
-const user1 = { name: "", age: null, premium: true };
-const user2 = { name: "Alice", age: 25, premium: false };
+const userOne = { name: "", age: null, premium: true };
+const userTwo = { name: "Alice", age: 25, premium: false };
 
-updateUser(user1);
-updateUser(user2);
+updateUser(userOne);
+updateUser(userTwo);
 
-console.log(user1);
+console.log(userOne);
 /* Expected Output:
 { name: "Guest", age: 18, premium: true }
 */
 
-console.log(user2);
+console.log(userTwo);
 /* Expected Output:
 { name: "Alice", age: 25, premium: false }
 */
