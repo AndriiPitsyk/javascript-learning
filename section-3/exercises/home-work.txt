@@ -37,8 +37,8 @@ From twelveMonths array extract months which are related to autumn in separate a
 
 Exercise 7:
 You have two arrays
-const fruits1 = ["Apple", "Banana"];
-const fruits2 = ["Cherry", "Mango"];
+const fruitsOne = ["Apple", "Banana"];
+const fruitsTwo = ["Cherry", "Mango"];
 
 Merge these 2 arrays to one array using all methods which you know;
 
