@@ -55,6 +55,14 @@ const anotherCar = {
 latestCar = {...car, ...anotherCar}
 console.log(latestCar);
 
+console.log("Exercise 2.3.")
+car.year = 2025;
+console.log(car);
+
+console.log("Exercise 2.4.")
+delete car.brand;
+console.log(car);
+
 /*
 Exercise 3:
 Create an array cars with "Toyota", "Ford", "BMW".
@@ -74,6 +82,7 @@ console.log(cars);
 
 console.log("Exercise 3.3.")
 console.log("Cars array includes 'Ford': ", cars.includes('Ford'));
+console.log(`Cars array includes 'Ford': ${cars.includes('Ford')}`);
 
 console.log("Exercise 3.4.")
 cars.unshift('Mercedes');
@@ -95,10 +104,10 @@ Create an object calculator with properties num1 and num2, add method add() that
 */
 
 const calculator = {
-    num1: undefined,
-    num2: undefined,
     add: function (num1, num2) {
-        return num1 + num2;
+        this.num1 = num1;
+        this.num2 = num2;
+        return this.num1 + this.num2;
     },
 }
 console.log('Sum of two values = ', calculator.add(1, 2));
@@ -142,15 +151,15 @@ Exercise 8:
 1. Merge two objects { a: 1, b: 2 } and { c: 3, d: 4 } to one object;
 2. For the merged object print object keys & object values;
 */
-firstObject = {
+const firstObject = {
     a: 1,
     b: 2
 }
-secondObject = {
+const secondObject = {
     c: 3,
     d: 4
 }
-newObject = Object.assign({}, firstObject, secondObject);
+const newObject = Object.assign({}, firstObject, secondObject);
 console.log(newObject);
 
 console.log("Keys of new object are: " + Object.keys(newObject));
