@@ -29,7 +29,7 @@ car['engine'] = "2.0 Hybrid";
 console.log(car);
 
 // 2.3
-car.year = 2025
+car.year = 2025;
 console.log(car);
 
 // 2.4
@@ -52,16 +52,16 @@ console.log(cars.includes("Ford"));
 cars.unshift("Mercedes");
 console.log(cars);
 
-console.log("Exercise 4: it will show 4");
+console.log("Exercise 4: it will show 5");
 
 console.log("Exercise 5");
 // Create an object calculator with properties num1 and num2, add method add() that returns their sum.
 
 const calculator ={
-    num1: 2,
-    num2: 3,
+    numOne: 2,
+    numTwo: 3,
     add(){
-        return this.num1 + this.num2
+        return this.numOne + this.numTwo;
     }
 };
 console.log(calculator.add());
@@ -77,10 +77,10 @@ console.log(autumnArray);
 
 console.log("Exercise 7");
 
-const fruits1 = ["Apple", "Banana"];
-const fruits2 = ["Cherry", "Mango"];
-const allFruitsOptionOne = fruits1.concat(fruits2);
-const allFruitsOptionTwo=[...fruits1,...fruits2];
+const fruitsOne = ["Apple", "Banana"];
+const fruitsTwo = ["Cherry", "Mango"];
+const allFruitsOptionOne = fruitsOne.concat(fruitsTwo);
+const allFruitsOptionTwo=[...fruitsOne,...fruitsTwo];
 console.log(allFruitsOptionOne);
 console.log(allFruitsOptionTwo);
 
