@@ -1,6 +1,6 @@
 // Exercise 1:
 // 1. Create an empty array numbers, then add values 10, 20, 30 using index positions.
-let numberArray  = [];
+const numberArray  = [];
 numberArray[0] = 10;
 numberArray[1] = 20;
 numberArray[2] = 30;
@@ -10,7 +10,7 @@ const mixTypesArray = ['string', 40, true];
 console.log(mixTypesArray.length);
 
 // 3. Create an array animals with at least 3 elements. Print the second element.
-let animalArray = ['dog', 'cat', 'cow'];
+const animalArray = ['dog', 'cat', 'cow'];
 console.log(animalArray[1]);
 // 4. Change the last element of animals to "Lion" and print the updated array.
 animalArray[2] = 'Lion';
@@ -37,7 +37,7 @@ console.log(car);
 
 // Exercise 3:
 // Create an array cars with "Toyota", "Ford", "BMW".
-let cars =["Toyota", "Ford", "BMW"];
+const cars =["Toyota", "Ford", "BMW"];
 // 1. Add "Tesla" to the end of array.
 cars.push("Tesla");
 // 2. Remove "Toyota" car from cars array and print the array.
@@ -60,10 +60,10 @@ console.log(cars);
 // Exercise 5:
 // Create an object calculator with properties num1 and num2, add method add() that returns their sum.
  const calculator = {
-     num1 : 10,
-     num2 : 10,
+     numOne : 10,
+     numTwo : 10,
      add : function (){
-         return this.num1 + this.num2;
+         return this.numOne+ this.numTwo;
      }
  }
  console.log(calculator.add());
@@ -73,26 +73,26 @@ console.log(cars);
 const twelveMonths = [ 'January', 'February', 'March', 'April', 'May', 'June',
     'July', 'August', 'September', 'October', 'November', 'December'];
 // From twelveMonths array extract months which are related to autumn in separate array.
-const autumnMonths = [twelveMonths.slice(8,11)]
+const autumnMonths = twelveMonths.slice(8,11);
 
 // Exercise 7:
 // You have two arrays
-const fruits1 = ["Apple", "Banana"];
-const fruits2 = ["Cherry", "Mango"];
+const fruitsOne = ["Apple", "Banana"];
+const fruitsTwo = ["Cherry", "Mango"];
 // Merge these 2 arrays to one array using all methods which you know;
-let allfruits = [fruits1, fruits2];
-allfruits = fruits1.concat(fruits2);
-allfruits = [...fruits1, ...fruits2];
+
+console.log(fruitsOne.concat(fruitsTwo));
+console.log([...fruitsOne, ...fruitsTwo]);
 
 // Exercise 8:
 // 1. Merge two objects { a: 1, b: 2 } and { c: 3, d: 4 } to one object;
 // 2. For the merged object print object keys & object values;
 
-const objects1= { a: 1, b: 2 }
-const objects2 ={ c: 3, d: 4 }
-const fullObjects = {...objects1, ...objects2};
-console.log(fullObjects);
-const mergeObjects = Object.assign({}, objects1, objects2);
+const objectsOne= { a: 1, b: 2 };
+const objectsTwo ={ c: 3, d: 4 };
+const mergedObjectsOne = {...objectsOne, ...objectsTwo};
+console.log(mergedObjectsOne);
+const mergeObjects = Object.assign({}, objectsOne, objectsTwo);
 console.log(mergeObjects);
 
 // Exercise 9:
