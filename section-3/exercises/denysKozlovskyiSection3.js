@@ -1,9 +1,9 @@
 // Exercise 1:
 // 1. Create an empty array numbers, then add values 10, 20, 30 using index positions.
 let numberArray  = [];
-numberArray[0] = 10
-numberArray[1] = 20
-numberArray[2] = 30
+numberArray[0] = 10;
+numberArray[1] = 20;
+numberArray[2] = 30;
 
 // 2. Create an array with different data types: a string, a number, and a boolean. Print its length.
 const mixTypesArray = ['string', 40, true];
@@ -13,7 +13,9 @@ console.log(mixTypesArray.length);
 let animalArray = ['dog', 'cat', 'cow'];
 console.log(animalArray[1]);
 // 4. Change the last element of animals to "Lion" and print the updated array.
-animalArray[2] = 'Lion'
+animalArray[2] = 'Lion';
+// or
+// animalArray[animalArray.length -1] = 'Lion'
 console.log(animalArray);
 
 // Exercise 2:
@@ -25,7 +27,7 @@ const car = {
 }
 console.log(car);
 // 2. Add properties *color* and *engine* to the car object by different ways. Set values to that properties what ever you want.
-car.color = 'black'
+car.color = 'black';
 // 3. Change the value of year to 2025 and print the updated object.
 car.year =2025;
 console.log(car);
@@ -37,11 +39,11 @@ console.log(car);
 // Create an array cars with "Toyota", "Ford", "BMW".
 let cars =["Toyota", "Ford", "BMW"];
 // 1. Add "Tesla" to the end of array.
-cars.push("Tesla")
+cars.push("Tesla");
 // 2. Remove "Toyota" car from cars array and print the array.
-cars.shift()
+cars.shift();
 // 3. Check if array includes "Ford" in cars array
-cars.includes("Ford")
+cars.includes("Ford");
 // 4. Add Mercedes as a 1st element of cars array
 cars.unshift("Mercedes");
 console.log(cars);
