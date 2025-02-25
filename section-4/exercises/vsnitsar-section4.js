@@ -45,11 +45,23 @@ function greet() {
 console.log(message)
 */
 
+
+/*
+Answer: will be displayed error, because message defined only inside function and not
+available globally
+*/
+
 /*
 Exercise 4:
 Create a function expression joinWords that joins multiple words into a sentence and print the result.
 Use rest operator for passing arguments in function.
 */
+
+const joinWords = function(...words) {
+    return words.join(" ");
+};
+
+console.log("Sentence:", joinWords('London', 'is', 'the', 'capital', 'of', 'Great', 'Britain.'));
 
 /*
 Exercise 5:
