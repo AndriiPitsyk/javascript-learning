@@ -29,7 +29,7 @@ console.log(car);
 // 2. Add properties *color* and *engine* to the car object by different ways. Set values to that properties what ever you want.
 car.color = 'black';
 // 3. Change the value of year to 2025 and print the updated object.
-car.year =2025;
+car.year = 2025;
 console.log(car);
 // 4. Delete brand property from object and print the updated object
 delete car.brand;
@@ -63,7 +63,7 @@ console.log(cars);
      numOne : 10,
      numTwo : 10,
      add : function (){
-         return this.numOne+ this.numTwo;
+         return this.numOne + this.numTwo;
      }
  }
  console.log(calculator.add());
@@ -90,19 +90,19 @@ console.log([...fruitsOne, ...fruitsTwo]);
 
 const objectsOne= { a: 1, b: 2 };
 const objectsTwo ={ c: 3, d: 4 };
-const mergedObjectsOne = {...objectsOne, ...objectsTwo};
-console.log(mergedObjectsOne);
+const mergedObjectsTwo = {...objectsOne, ...objectsTwo};
+console.log(mergedObjectsTwo);
 const mergeObjects = Object.assign({}, objectsOne, objectsTwo);
 console.log(mergeObjects);
 
 // Exercise 9:
 // Create a car object with properties: brand, model, and year. Destructure brand and model from the car object.
 
-const car2 = {
+const carTwo = {
     brand: 'Audi',
     model: 'Q5',
     year : 2017
 }
 
-const {brand, model} = car2;
+const {brand, model} = carTwo;
 console.log(brand, model);
