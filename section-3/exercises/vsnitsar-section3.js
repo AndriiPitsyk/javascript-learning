@@ -104,13 +104,13 @@ Create an object calculator with properties num1 and num2, add method add() that
 */
 
 const calculator = {
-    add: function (num1, num2) {
-        this.num1 = num1;
-        this.num2 = num2;
-        return this.num1 + this.num2;
+    numOne: 5,
+    numTwo: 10,
+    add() {
+        return this.numOne + this.numTwo;
     },
 }
-console.log('Sum of two values = ', calculator.add(1, 2));
+console.log('Sum of two values = ', calculator.add());
 
 /*
 Exercise 6:
