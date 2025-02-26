@@ -26,7 +26,7 @@ carsTwo.push('Mercedes');
 console.log(cars.length);
 
 Exercise 5:
-Create an object calculator with properties num1 and num2, add method add() that returns their sum.
+Create an object calculator with properties numOne and numTwo with number values, add method add() that returns their sum.
 
 Exercise 6:
 You have an array of 12 months
