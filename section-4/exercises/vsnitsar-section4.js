@@ -9,7 +9,7 @@ Use template literal to form that string.
 function getUserInfo(userInfo) {
     const currentYear = new Date().getFullYear();
     const age = currentYear - userInfo.year;
-    return `Hello, my name is ${userInfo.firstName} ${userInfo.lastName}, I'm ${age}. I work in ${userInfo.company} company.`
+    return `Hello, my name is ${userInfo.firstName} ${userInfo.lastName}, I'm ${age}. I work in ${userInfo.company} company.`;
 }
 
 const user = {
@@ -117,10 +117,10 @@ Exercise 8:
 Declare a global object user = { name: "Alice", age: 25 }. Modify its age inside a function and log the object.
 */
 
-let newUser = {
+const newUser = {
     name: "Alice",
     age: 25
-}
+};
 
 function updateAge(newAge) {
     newUser.age = newAge;
@@ -161,10 +161,11 @@ function getFullName(firstName, lastName) {
     return `${firstName} ${lastName}`;
 }
 */
-const getFullName = (firstName, lastName)=>
-    `${firstName} ${lastName}`
+const getFullName = (firstName, lastName) =>
+    `${firstName} ${lastName}`;
 
 console.log(getFullName('Vlad', 'Snitsar'));
+
 /*
 2. Rewrite this function expression to declaration:
     const multiply = function(a, b) {
@@ -180,10 +181,10 @@ function multiply(a, b) {
 3. Rewrite function declaration & function expression from 1 & 2 to arrow function;
 */
 
-console.log("Arrow function for first task")
-const arrowGetFullName = (firstName, lastName)=> `${firstName} ${lastName}`;
+console.log("Arrow function for first task");
+const arrowGetFullName = (firstName, lastName) => `${firstName} ${lastName}`;
 console.log(arrowGetFullName('Vlad', 'Snitsar'));
 
-console.log("Arrow function for second task")
-const arrowMultiply =  (a, b) => a * b ;
+console.log("Arrow function for second task");
+const arrowMultiply = (a, b) => a * b;
 console.log(arrowMultiply(5, 5));
