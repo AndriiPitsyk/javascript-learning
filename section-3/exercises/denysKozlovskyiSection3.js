@@ -90,10 +90,10 @@ console.log([...fruitsOne, ...fruitsTwo]);
 
 const objectsOne= { a: 1, b: 2 };
 const objectsTwo ={ c: 3, d: 4 };
-const mergedObjectsTwo = {...objectsOne, ...objectsTwo};
-console.log(mergedObjectsTwo);
-const mergeObjects = Object.assign({}, objectsOne, objectsTwo);
-console.log(mergeObjects);
+const mergedObjectsOne = {...objectsOne, ...objectsTwo};
+console.log(mergedObjectsOne);
+const mergeObjectsTwo = Object.assign({}, objectsOne, objectsTwo);
+console.log(mergeObjectsTwo);
 
 // Exercise 9:
 // Create a car object with properties: brand, model, and year. Destructure brand and model from the car object.
