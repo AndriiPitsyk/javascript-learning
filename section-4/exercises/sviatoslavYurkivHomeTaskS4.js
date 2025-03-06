@@ -4,7 +4,7 @@
 // Use template literal to form that string.
 
 function getUserInfo(user) {
-    return `Hello, my name is ${user.firstName} ${user.lastName}, I'm ${user.year}. I work in ${user.company} company`
+    return `Hello, my name is ${user.firstName} ${user.lastName}, I'm ${user.year}. I work in ${user.company} company`;
 }
 const user ={
     firstName: "Sviatoslav",
@@ -43,7 +43,7 @@ increaseCounter(); // 3
 // Create a function expression joinWords that joins multiple words into a sentence and print the result. Use rest operator for passing arguments in function.
 
 
-function joinWords(...words){
+const joinWords = function (...words){
     console.log(words.join(' '));
 }
 joinWords("Johnson","Hello","January");
@@ -56,22 +56,16 @@ joinWords("Johnson","Hello","January");
 //Exercise 6:
 // Write an arrow function calculatePrice where will be two arguments "price" and "tax" that returns the total price after tax.
 // Function should calculate the total price even if "tax" argument is not passed. Hint: use default value.
-// let price;
-// let tax;
-// function calculatePrice(price,tax = 0){
-//     let totalPrice = price * tax;
-//     console.log(totalPrice)
-// }
-// calculatePrice(10,5);
 
-const calculatePrice = (price,tax = 0) => price+(price * tax)
-console.log(calculatePrice(4,))
+
+const calculatePrice = (price,tax = 0) => price+(price * tax);
+console.log(calculatePrice(4,));
 
 //Exercise 7: userAge is not defined
 
 //Exercise 8:
 //Declare a global object user = { name: "Alice", age: 25 }. Modify its age inside a function and log the object.
-const userObject = { name: "Alice", age: 25 }
+const userObject = { name: "Alice", age: 25 };
 
 function updateAge(newAge){
     userObject.age=newAge;
@@ -116,5 +110,5 @@ function multiply(a,b){
 }
 
 // 3. Rewrite function declaration & function expression from 1 & 2 to arrow function;
-const getFullNameOne = (firstName,lastName) => `${firstName} ${lastName}`
-const multiplyOne = (a,b) => a * b
+const getFullNameOne = (firstName,lastName) => `${firstName} ${lastName}`;
+const multiplyOne = (a,b) => a * b;
