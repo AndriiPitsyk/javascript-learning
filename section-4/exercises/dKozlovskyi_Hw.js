@@ -26,6 +26,7 @@ function increaseCounter() {
 }
 console.log(increaseCounter()); //Output: 1
 console.log(increaseCounter()); //Output: 2
+
 // Exercise 3:
 // What will show console logs in the code bellow ? Think without code execution
 // const message = 'Hi User';
@@ -34,7 +35,7 @@ console.log(increaseCounter()); //Output: 2
 //     const message = 'Hello World';
 // };
 // console.log(message)
-//we will have error because we try to  use variable which available only in the function scope
+//Output: "Hi user" - global variable
 
 // Exercise 4:
 // Create a function expression joinWords that joins multiple words into a sentence and print the result. Use rest operator for passing arguments in function.
