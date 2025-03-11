@@ -59,7 +59,7 @@ joinWords("Johnson","Hello","January");
 
 
 const calculatePrice = (price,tax = 0) => price+(price * tax);
-console.log(calculatePrice(4,));
+console.log(calculatePrice(4,5));
 
 //Exercise 7: userAge is not defined
 
