@@ -39,7 +39,7 @@ console.log(increaseCounter()); //Output: 2
 
 // Exercise 4:
 // Create a function expression joinWords that joins multiple words into a sentence and print the result. Use rest operator for passing arguments in function.
-function createSentences (...word){
+const createSentences = (...word) =>{
     let sentence = word.join(" ")
     console.log(sentence);
 }
