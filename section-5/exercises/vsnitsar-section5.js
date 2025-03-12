@@ -176,8 +176,8 @@ Use all three logical assignment operators (||=, &&=, ??=) in one function:
 function updateUser(userData) {
     return {
         name: userData.name ||= 'Guest',
-        age: userData.age &&= 25,
-        premium: userData.premium ??= false,
+        age: userData.age ??= 18,
+        premium: userData.premium &&= true,
     }
 }
 
