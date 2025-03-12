@@ -2,26 +2,28 @@
 // 1. Write a function which will check if a user has a valid ticket ID and does user have 18+ to enter a club.
 // If condition is true then print 'User is allowed to enter the club!' if false then print 'User entrance is not allowed!'
 // Hint: use operator *&&* to check both conditions.
-function checkingUserIdTicket(ticketID, userAge){
+function checkingUserAgeAndIdTicket(ticketID, userAge){
     if (ticketID === 'Yes' && userAge >=18){
-        return console.log("User entrance is allowed!");
+        console.log("User entrance is allowed!");
     } else {
-        return console.log("User entrance is not allowed!");
+        console.log("User entrance is not allowed!");
     }
 }
-checkingUserIdTicket("Yes", 18);
-checkingUserIdTicket("No", 18);
-checkingUserIdTicket("Yes", 17);
+checkingUserAgeAndIdTicket("Yes", 18);
+checkingUserAgeAndIdTicket("No", 18);
+checkingUserAgeAndIdTicket("Yes", 17);
+
 // 2. Create a function using *||* operator to check if user position is *student* OR a *senior* to get a discount to the course.
 function checkingUserPosition(userPosition) {
     if (userPosition === "student" || userPosition === "senior") {
-        return console.log("Yo have discount");
-    } else if (userPosition === "") {
-        return console.log("we cannot check you");
+        console.log("Yo have discount");
+    } else if (!userPosition) {
+        console.log("we cannot check you");
     } else {
-        return console.log("Yo do not have discount");
+        console.log("Yo do not have discount");
     }
 }
+
 checkingUserPosition("pupil");
 checkingUserPosition("senior");
 
@@ -61,17 +63,17 @@ checkTrafficLightsColour("red");
 // Exercise 4:
 // Create a function which will check a student’s score is A (90+), B (80-89), C (70-79), D (60-69) and return a score from function;
 // In this exercises please use *if/else if/ else* statements and logical operators.
-function checkStudentScore(userScore) {
+function checkStudentScore(studentScore) {
     if (userScore >= 90) {
-        return console.log(`You got ${userScore} points and your grade is A`);
-    } else if (userScore >= 80 && userScore <= 89) {
-        return console.log(`You got ${userScore} points and your grade is B`);
-    } else if (userScore >= 70 && userScore <= 79) {
-        return console.log(`You got ${userScore} points and your grade is C`);
-    } else if (userScore >= 60 && userScore <= 69) {
-        return console.log(`You got ${userScore} points and your grade is D`);
-    }else {
-        console.log(`You got ${userScore} points - more studies`);
+        return `You got ${studentScore} points and your grade is A`;
+    } else if (userScore >= 80) {
+        return `You got ${studentScore} points and your grade is B`;
+    } else if (userScore >= 70) {
+        return `You got ${studentScore} points and your grade is C`;
+    } else if (userScore >= 60) {
+        return `You got ${studentScore} points and your grade is D`;
+    } else {
+        return `You got ${studentScore} points - more studies`;
     }
 
 }
@@ -99,7 +101,7 @@ checkStudentScore(65);
 // }
 const temp = 30;
 
-temp > 25 ? (console.log("Hot day")) : console.log("Cool day");
+temp > 25 ? console.log("Hot day") : console.log("Cool day");
 
 // Exercise 7:
 // What will be the result of the code bellow? Think without code execution:
