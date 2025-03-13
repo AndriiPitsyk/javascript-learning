@@ -3,21 +3,19 @@
 //If condition is true then print 'User is allowed to enter the club!' if false then print 'User entrance is not allowed!'
 // Hint: use operator *&&* to check both conditions.
 
-const userClubEnter = function (ticketId = 0,age = 0){
-    if ((ticketId <= 99 && ticketId > 0)  && age >= 18){
+const userAccess = function (ticketId, age){
+    if (ticketId > 0  && age >= 18){
         console.log(`User with ${ticketId} and ${age} is allowed to enter the club!`);
     }else {
         console.log(`User with ticket ID: ${ticketId} and Age: ${age} is NOT allowed to enter the club!`);
     }
 }
-userClubEnter(0,1)
+userAccess()
 
 //2. Create a function using *||* operator to check if user position is *student* OR a *senior* to get a discount to the course.
-const courseDiscount = function (position = ""){
+const courseDiscount = function (position ){
     if (position === "student" || position === "senior"){
         console.log(`course is WITH discount for ${position}`);
-    }if (position === ""){
-        console.log(`Please Enter the Position name`);
     }
     else {
         console.log(`course is WITHOUT discount for ${position}`);
@@ -84,9 +82,7 @@ trafficLightAction("yellow")
 // Create a function which will check a student’s score is A (90+), B (80-89), C (70-79), D (60-69) and return a score from function;
 // In this exercises please use *if/else if/ else* statements and logical operators.
 function studentScore(score){
-    if (score > 100) {
-        console.log(`Please Enter the student score from 100 to 60`);
-        } else if (score >= 90) {
+    if (score > 89) {
             console.log(`Student score is ${score} and it is A`);
         } else if (score >= 80) {
             console.log(`Student score is ${score} and it is B`);
@@ -98,7 +94,7 @@ function studentScore(score){
             console.log(`Bad student his score is ${score}`);
         }
     }
-studentScore(60);
+studentScore(50);
 
 //Exercise 5:
 // What will be the result of the code bellow? Think without code execution
@@ -143,25 +139,26 @@ console.log('Truthy')
 // 2. What will be the result of the code bellow? Think without code execution:
 // const username = "";
 // console.log(username && "Guest"); // show nothing cuz (= "" // falsy) and it should be true && true
+// Answer Empty string
 //
 // 3.What will be the result of the code bellow? Think without code execution:
 // const userCountry = null;
 // console.log(userCountry ?? 'USA');
 // USA
-
+console.log("9");
 // Exercise 9:
 // What will be the result of the code bellow? Think without code execution:
 
-    function getUserData(userData) {
-        return {
-            name: userData.name || 'Default value',
-            year: userData.year || 2005,
-        }
-    }
-
-console.log(getUserData({name: 'Test user'}));
-console.log(getUserData({year: 2005}));
-console.log(getUserData({}));
+//     function getUserData(userData) {
+//         return {
+//             name: userData.name || 'Default value',
+//             year: userData.year || 2005,
+//         }
+//     }
+//
+// console.log(getUserData({name: 'Test user'})); answer { name: 'Test user', year: 2005 }
+// console.log(getUserData({year: 2005})); answer { name: 'Default value', year: 2005 }
+// console.log(getUserData({})); answer { name: 'Default value', year: 2005 }
 
 
 //Exercise 10:
