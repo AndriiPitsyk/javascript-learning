@@ -3,7 +3,11 @@ Exercise 1: Use forEach() to double each number in the array and print the resul
 */
 
 const nums = [2, 4, 6, 8];
-// Your code here
+
+nums.forEach(num => {
+    console.log(`${num * 2}`);
+})
+
 
 /*
 Exercise 2:
@@ -11,7 +15,12 @@ Use forEach() to print only the even numbers from an array.
 */
 
 const numbers = [3, 10, 7, 8, 15, 2];
-// Your code here
+
+numbers.forEach(number => {
+    if (number % 2 === 0) {
+        console.log(`${number} is even number`);
+    }
+})
 
 /*
 Exercise 3:
@@ -19,7 +28,9 @@ User filter() to create an array of names that is longer than 4 characters.
 */
 
 const names = ["Anna", "Jonathan", "Lee", "Michael"];
-// Your code here
+
+const filteredNames = names.filter(name => name.length > 4);
+console.log(filteredNames);
 
 /*
 Exercise 4:
@@ -27,7 +38,9 @@ Use map() to create a new array where each number is doubled.
 */
 
 const numbers = [1, 2, 3, 4, 5];
-// Your code here
+
+const doubledNumbers = numbers.map(number => number * 2);
+console.log(doubledNumbers);
 
 /*
 Exercise 5:
@@ -38,7 +51,10 @@ const users = [
     {name: "Bob", age: 30},
     {name: "Charlie", age: 35}
 ];
-// Your code here
+
+const correctMessages = users.map((user) =>
+    `${user.name} is ${user.age} years old`);
+console.log(correctMessages);
 
 /*
 Exercise 6:
@@ -53,7 +69,8 @@ const students = [
     {name: "Charlie", score: 60},
     {name: "Eleanor", score: 39}
 ];
-// Your code here
+
+console.log(students.filter((student) => student.score >= 50));
 
 /*
 Exercise 7:
@@ -61,7 +78,12 @@ Use reduce() to sum all numbers in an array.
 */
 
 const numbers = [1, 2, 3, 4, 5, 12, 33];
-// Your code here
+
+console.log(numbers.reduce((acc, number) => {
+    acc += number;
+    return acc;
+}, 0));
+
 
 /*
 Exercise 8:
@@ -72,7 +94,11 @@ const cart = [
     {name: "Mouse", price: 50},
     {name: "Keyboard", price: 80}
 ];
-// Your code here
+
+console.log(cart.reduce((acc, item) => {
+    acc += item.price;
+    return acc;
+}, 0));
 
 /*
 Exercise 9:
@@ -118,10 +144,20 @@ const people = [
     },
 ];
 
+const youngPeople = people.filter(person => person.age <= 25)
+    .map(person => ({
+        name: person.firstName + ' ' + person.lastName,
+        email: person.email
+    }));
+
+console.log(youngPeople);
+
 // Expected Result:
+/*
 console.log(youngPeople);
 [
     {name: 'Jane Poe', email: 'jane@gmail.com'},
     {name: 'Sara Soe', email: 'sara@gmail.com'},
     {name: 'Jose Koe', email: 'jose@gmail.com'}
 ]
+*/
