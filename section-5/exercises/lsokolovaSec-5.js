@@ -6,7 +6,7 @@ If condition is true then print 'User is allowed to enter the club!' if false th
 Hint: use operator *&&* to check both conditions.
 */
 
-function checkUser(age, validId) {
+function checkTicketId(age, validId) {
     if (age >= 18 && validId === 'true') {
         console.log('User is allowed to enter the club!');
     } else {
@@ -14,10 +14,10 @@ function checkUser(age, validId) {
     }
 }
 
-checkUser(25, "true");
-checkUser(25, "false");
-checkUser(15, "true");
-checkUser(15, "false");
+checkTicketId(25, "true");
+checkTicketId(25, "false");
+checkTicketId(15, "true");
+checkTicketId(15, "false");
 
 console.log("--------Exercise 1.2--------");
 
