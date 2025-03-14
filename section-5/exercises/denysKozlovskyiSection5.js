@@ -64,7 +64,7 @@ checkTrafficLightsColour("red");
 // Create a function which will check a student’s score is A (90+), B (80-89), C (70-79), D (60-69) and return a score from function;
 // In this exercises please use *if/else if/ else* statements and logical operators.
 function checkStudentScore(studentScore) {
-    if (userScore >= 90) {
+    if (studentScore >= 90) {
         return `You got ${studentScore} points and your grade is A`;
     } else if (userScore >= 80) {
         return `You got ${studentScore} points and your grade is B`;
