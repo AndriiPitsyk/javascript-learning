@@ -66,14 +66,12 @@ checkTrafficLightsColour("red");
 function checkStudentScore(studentScore) {
     if (studentScore >= 90) {
         return `You got ${studentScore} points and your grade is A`;
-    } else if (userScore >= 80) {
+    } else if (studentScore >= 80) {
         return `You got ${studentScore} points and your grade is B`;
-    } else if (userScore >= 70) {
+    } else if (studentScore >= 70) {
         return `You got ${studentScore} points and your grade is C`;
-    } else if (userScore >= 60) {
+    } else if (studentScore >= 60) {
         return `You got ${studentScore} points and your grade is D`;
-    } else {
-        return `You got ${studentScore} points - more studies`;
     }
 
 }
