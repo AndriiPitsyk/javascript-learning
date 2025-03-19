@@ -10,7 +10,7 @@ const userAccess = function (ticketId, age) {
         console.log(`User with ticket ID: ${ticketId} and Age: ${age} is NOT allowed to enter the club!`);
     }
 }
-userAccess(1, 2)
+userAccess(10, 21);
 
 //2. Create a function using *||* operator to check if user position is *student* OR a *senior* to get a discount to the course.
 const courseDiscount = function (position) {
@@ -23,8 +23,8 @@ const courseDiscount = function (position) {
 courseDiscount("student");
 courseDiscount("senior");
 courseDiscount("Sviat");
-courseDiscount(1323131)
-courseDiscount("")
+courseDiscount(1323131);
+courseDiscount("");
 
 // Exercise 2:
 // What will be the result of the code bellow? Think without code execution:
@@ -74,9 +74,9 @@ function trafficLightAction(color) {
     }
 }
 
-trafficLightAction("red")
-trafficLightAction("green")
-trafficLightAction("yellow")
+trafficLightAction("red");
+trafficLightAction("green");
+trafficLightAction("yellow");
 
 
 //Exercise 4:
@@ -129,7 +129,7 @@ temp > 25 ? console.log("Hot day") : console.log("Cool day");
 // } else {
 //     console.log('Falsy')
 // }
-console.log('Truthy')
+console.log('Truthy');
 
 //Exercise 8:
 // 1. What will be the result of the code bellow? Think without code execution:
