@@ -3,21 +3,20 @@
 //If condition is true then print 'User is allowed to enter the club!' if false then print 'User entrance is not allowed!'
 // Hint: use operator *&&* to check both conditions.
 
-const userAccess = function (ticketId, age){
-    if (ticketId > 0  && age >= 18){
+const userAccess = function (ticketId, age) {
+    if (ticketId > 0 && age >= 18) {
         console.log(`User with ${ticketId} and ${age} is allowed to enter the club!`);
-    }else {
+    } else {
         console.log(`User with ticket ID: ${ticketId} and Age: ${age} is NOT allowed to enter the club!`);
     }
 }
-userAccess()
+userAccess(1, 2)
 
 //2. Create a function using *||* operator to check if user position is *student* OR a *senior* to get a discount to the course.
-const courseDiscount = function (position ){
-    if (position === "student" || position === "senior"){
+const courseDiscount = function (position) {
+    if (position === "student" || position === "senior") {
         console.log(`course is WITH discount for ${position}`);
-    }
-    else {
+    } else {
         console.log(`course is WITHOUT discount for ${position}`);
     }
 }
@@ -57,6 +56,7 @@ switch (color) {
     default:
         console.log("No trafficLight found");
 }
+
 // Function + Switch
 function trafficLightAction(color) {
     switch (color) {
@@ -73,6 +73,7 @@ function trafficLightAction(color) {
             console.log("No trafficLight found");
     }
 }
+
 trafficLightAction("red")
 trafficLightAction("green")
 trafficLightAction("yellow")
@@ -81,19 +82,20 @@ trafficLightAction("yellow")
 //Exercise 4:
 // Create a function which will check a student’s score is A (90+), B (80-89), C (70-79), D (60-69) and return a score from function;
 // In this exercises please use *if/else if/ else* statements and logical operators.
-function studentScore(score){
+function studentScore(score) {
     if (score > 89) {
-            console.log(`Student score is ${score} and it is A`);
-        } else if (score >= 80) {
-            console.log(`Student score is ${score} and it is B`);
-        } else if (score >= 70) {
-            console.log(`Student score is ${score} and it is C`);
-        } else if (score >= 60) {
-            console.log(`Student score is ${score} and it is D`);
-        } else {
-            console.log(`Bad student his score is ${score}`);
-        }
+        console.log(`Student score is ${score} and it is A`);
+    } else if (score >= 80) {
+        console.log(`Student score is ${score} and it is B`);
+    } else if (score >= 70) {
+        console.log(`Student score is ${score} and it is C`);
+    } else if (score >= 60) {
+        console.log(`Student score is ${score} and it is D`);
+    } else {
+        console.log(`Bad student his score is ${score}`);
     }
+}
+
 studentScore(50);
 
 //Exercise 5:
@@ -108,7 +110,6 @@ studentScore(50);
 console.log("No user found");
 
 
-
 //Exercise 6:
 // Rewrite the following if-else statement using a ternary operator:
 // const temp = 30;
@@ -118,7 +119,7 @@ console.log("No user found");
 //   console.log("Cool day");
 // }
 const temp = 30;
-temp >25 ? console.log("Hot day") : console.log("Cool day");
+temp > 25 ? console.log("Hot day") : console.log("Cool day");
 
 //Exercise 7:
 // What will be the result of the code bellow? Think without code execution:
@@ -145,7 +146,7 @@ console.log('Truthy')
 // const userCountry = null;
 // console.log(userCountry ?? 'USA');
 // USA
-console.log("9");
+
 // Exercise 9:
 // What will be the result of the code bellow? Think without code execution:
 
@@ -186,10 +187,11 @@ function updateUser(user) {
     user.age ??= 18;
     user.premium &&= true;
 }
- const userOne = { name: "", age: null, premium: true };
- const userTwo = { name: "Alice", age: 25, premium: false };
 
- updateUser(userOne);
- console.log(userOne);
- updateUser(userTwo);
- console.log(userTwo);
+const userOne = {name: "", age: null, premium: true};
+const userTwo = {name: "Alice", age: 25, premium: false};
+
+updateUser(userOne);
+console.log(userOne);
+updateUser(userTwo);
+console.log(userTwo);
