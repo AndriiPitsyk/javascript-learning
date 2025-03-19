@@ -42,7 +42,7 @@ console.log("Stay indoors or use sunscreen.");
 // Exercise 3:
 // Create a *switch* statement that checks a traffic light color (red, yellow, green) and logs what a driver should do.
 // Switch
-const color = "red"
+const color = "red";
 switch (color) {
     case  "red":
         console.log(`Stop!`);
