@@ -36,9 +36,9 @@ let firstNumber = 0;
 let secondNumber = 1;
 for (let i = 0; i < 10; i++) {
      console.log(firstNumber);
-     let SumOfTwo = firstNumber + secondNumber;
+     let sumOfTwo = firstNumber + secondNumber;
      firstNumber = secondNumber;
-     secondNumber = SumOfTwo;
+     secondNumber = sumOfTwo;
 }
 
 console.log("Exercise 5");
@@ -49,8 +49,8 @@ for (let i = 0; i < 3; i++) {
 
 console.log("Exercise 5 using while loop");
 let i = 0;
-while (i<3){
-    console.log( `number ${i}!` );
+while (i < 3) {
+    console.log(`number ${i}!`);
     i++;
 }
 
@@ -75,7 +75,7 @@ console.log(sum);
 
 console.log('Exercise 7');
 //Write a do...while loop that prints only even numbers from 2 to 20.
-let number = 1;
+let number = 2;
 do {
     if (number % 2 === 0) {
         console.log(number)
