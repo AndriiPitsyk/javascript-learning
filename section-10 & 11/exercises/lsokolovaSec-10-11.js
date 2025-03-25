@@ -26,7 +26,7 @@ Modify the following code so that it returns "Success!" after 1 second and print
 */
 
 function asyncTask() {
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve) => {
         // Your code here
         setTimeout(() => {
             resolve("Success!");
