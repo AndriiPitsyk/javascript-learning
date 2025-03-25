@@ -94,16 +94,15 @@ function getUserDetails(id) {
 }
 
 async function getUsers() {
-    try {
+
         const id = await getUserId();
         const user = await getUserDetails(id);
         console.log(user);
-    } catch (error) {
-        console.log(error);
     }
-}
 
-getUsers().then();
+getUsers().catch((error) => {
+    console.log(error);
+})
 
 //Exercise 7:
 // Write a function where you will:
