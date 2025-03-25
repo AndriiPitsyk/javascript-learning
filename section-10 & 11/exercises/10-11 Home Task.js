@@ -146,12 +146,13 @@ async function usersFromWebsiteTwo() {
     console.log(usersArray);
 }
 
-usersFromWebsiteTwo();
+usersFromWebsiteTwo().catch(Error => {
+    console.log(Error.message);
+})
 
 //Exercise 9:
 // Modify the function below to use async/await and handle errors properly.
 async function fetchUserData() {
-    try {
         const response = await fetch("https://jsonplaceholder.typicode.com");
 
         if (response.status !== 200) {
@@ -160,9 +161,8 @@ async function fetchUserData() {
 
         const userData = await response.json();
         console.log(userData);
-    } catch (error) {
-        console.log("Error:", error.message);
-    }
 }
 
-fetchUserData();
+fetchUserData().catch((error) => {
+    console.log(error.message);
+})
