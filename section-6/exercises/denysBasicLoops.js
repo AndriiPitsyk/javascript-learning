@@ -99,10 +99,11 @@ console.log("Largest number:", max);
 ////////////////////////////////////////////////////////////////////////////////////
 console.log('Exercise 9')
 //Write a for...of loop that sums all the numbers in the array:
+let sumTwo = 0;
 const arrayOfNumbers = [1, 2, 3, 4, 5, 6];
 let sumArrayOfNumbers = 0;
 for (const number of arrayOfNumbers) {
-    sumArrayOfNumbers = number + sum;
+    sumArrayOfNumbers = number + sumTwo;
 }
 console.log(sumArrayOfNumbers);
 ////////////////////////////////////////////////////////////////////////////////////
@@ -146,6 +147,4 @@ const students = [
 for (const student of students) {
     for (const studentKey in student) {
         console.log(studentKey, student[studentKey]);
-    }
-
-}
+    }}

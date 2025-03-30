@@ -5,7 +5,7 @@ nums.forEach(num => {
     console.log(num * 2);
 });
 // One more
-nums.forEach(doubleNumbers)
+nums.forEach(doubleNumbers);
 
 function doubleNumbers(number) {
     console.log(number * 2);
@@ -30,12 +30,12 @@ const filteredNames = names.filter(name => name.length > 4);
 console.log(filteredNames);
 
 //Just try to use as function
-function filterByNames(array, length) {
-    const filteredArray = array.filter(item => item.length >= length);
+function filterNamesByLength(userNames, minNameLength) {
+    const filteredArray = userNames.filter(item => item.length >= minNameLength);
     console.log(filteredArray);
 }
 
-filterByNames(names, 4);
+filterNamesByLength(names, 4);
 
 console.log("Exercise 4")
 // Use map() to create a new array where each number is doubled.
@@ -65,8 +65,8 @@ const students = [
     {name: "Eleanor", score: 39}
 ];
 
-const usersWith50Scores = students.filter(student => student.score === 50);
-console.log(usersWith50Scores);
+const filterUsersByScores = students.filter(student => student.score === 50);
+console.log(filterUsersByScores);
 //
 console.log("Exercise 7")
 
