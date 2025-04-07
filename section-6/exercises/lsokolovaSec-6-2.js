@@ -4,9 +4,7 @@ Use forEach() to double each number in the array and print the result.*/
 
 const nums = [2, 4, 6, 8];
 // Your code here
-nums.forEach(num => {
-    console.log(num * 2);
-});
+nums.forEach(num => console.log(num * 2));
 
 console.log("-------------Exercise 2 ---------------");
 /*Exercise 2:
@@ -27,7 +25,6 @@ User filter() to create an array of names that is longer than 4 characters.*/
 const names = ["Anna", "Jonathan", "Lee", "Michael"];
 // Your code here
 const longNames = names.filter(name => name.length > 4);
-
 console.log(longNames);
 
 console.log("-------------Exercise 4 ---------------");
@@ -37,7 +34,6 @@ Use map() to create a new array where each number is doubled.*/
 const numbs = [1, 2, 3, 4, 5];
 // Your code here
 const doubledNumbers = numbs.map(num => num * 2);
-
 console.log(doubledNumbers);
 
 console.log("-------------Exercise 5 ---------------");
@@ -51,7 +47,6 @@ const users = [
 ];
 // Your code here
 const messages = users.map(user => `${user.name} is ${user.age} years old`);
-
 console.log(messages);
 
 console.log("-------------Exercise 6 ---------------");
@@ -67,7 +62,6 @@ const students = [
 ];
 // Your code here
 const passedScores = students.filter(student => student.score >= 50);
-
 console.log(passedScores);
 
 console.log("-------------Exercise 7 ---------------");
@@ -77,7 +71,6 @@ Use reduce() to sum all numbers in an array.*/
 const numArr = [1, 2, 3, 4, 5, 12, 33];
 // Your code here
 const sum = numArr.reduce((total, num) => total + num, 0);
-
 console.log("Sum:", sum);
 
 console.log("-------------Exercise 8 ---------------");
@@ -91,7 +84,6 @@ const cart = [
 ];
 // Your code here
 const totalPrice = cart.reduce((total, product) => total + product.price, 0);
-
 console.log("Total Price:", totalPrice);
 
 console.log("-------------Exercise 9 ---------------");
@@ -139,10 +131,8 @@ const people = [
 const youngPeople = people.filter(person => person.age <= 25)
     .map(person => ({
         name: person.firstName + " " + person.lastName,
-        email: person.email, // Get the email
-        //age: person.age,
+        email: person.email
     }));
-
 console.log(youngPeople);
 // Expected Result:
 /*
