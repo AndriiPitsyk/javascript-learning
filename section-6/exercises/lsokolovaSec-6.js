@@ -35,10 +35,9 @@ const numbersArr = [10, -5, 20, -8, 30, -2];
 for (let i = 0; i < numbers.length; i++) {
     // Your code here
     if (numbersArr[i] < 0) {
-
         continue;
     }
-    console.log(`index ${i} positive ${numbersArr[i]}`);
+    console.log(`index ${i} is positive ${numbersArr[i]}`);
 }
 
 console.log("-------------Exercise 4---------------");
@@ -134,7 +133,7 @@ let sumArray = 0;
 // Your code here
 for (const num of arrayNumbers) {
     sumArray += num;
-    console.log(sumArray);
+    //console.log(sumArray);
 }
 console.log("Sum:", sumArray);
 
