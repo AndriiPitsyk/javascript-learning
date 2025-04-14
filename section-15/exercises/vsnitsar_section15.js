@@ -193,3 +193,4 @@ const car = new Car('Peugeot', 40, 'Petrol');
 console.log(car.showInfo());
 const oldCar = new Vehicle('Citroen', 35, 'Electric')
 console.log(oldCar.showInfo());
+console.log(car.signal());
