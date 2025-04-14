@@ -8,6 +8,7 @@ nums.forEach(num => {
     console.log(`${num * 2}`);
 })
 
+nums.forEach(num => console.log(`${num * 2}`));
 
 /*
 Exercise 2:
@@ -52,7 +53,7 @@ const users = [
     {name: "Charlie", age: 35}
 ];
 
-const correctMessages = users.map((user) =>
+const correctMessages = users.map(user =>
     `${user.name} is ${user.age} years old`);
 console.log(correctMessages);
 
@@ -70,7 +71,7 @@ const students = [
     {name: "Eleanor", score: 39}
 ];
 
-console.log(students.filter((student) => student.score >= 50));
+console.log(students.filter(student => student.score >= 50));
 
 /*
 Exercise 7:
