@@ -1,7 +1,7 @@
 /*
 Exercise 1: Write a for loop that calculates the factorial of 5 (5! = 5 × 4 × 3 × 2 × 1).
 */
-console.log("")
+console.log("Factorial of 5 = ")
 let factorial = 1;
 for (let i = 5; i > 0; i--) {
     factorial *= i;
@@ -53,7 +53,7 @@ for (let i = 0; i < 3; i++) {
     console.log(`number ${i}!`);
 }
 
-let i = 0
+let i = 0;
 while (i < 3) {
     console.log(`number ${i}!`);
     i++;
@@ -104,7 +104,7 @@ do {
     }
     i++;
 }
-while (i < numbers.length)
+while (i < numbers.length);
 console.log("Largest number:", max);
 
 /*
@@ -113,7 +113,7 @@ Exercise 9: Write a for...of loop that sums all the numbers in the array:
 
 const numbers = [5, 10, 15, 20];
 let sum = 0;
-for (let number of numbers) {
+for (const number of numbers) {
     sum += number;
 }
 console.log("Sum:", sum);
@@ -125,7 +125,7 @@ Exercise: 10 Write a for...of loop that finds the longest word in an array.
 const words = ["apple", "banana", "strawberry", "kiwi"];
 let longest = "";
 
-for (let word of words) {
+for (const word of words) {
     if (longest.length < word.length) {
         longest = word;
     }
@@ -138,19 +138,19 @@ Exercise: 11
 
 //1. Write a for...in loop that prints all the keys of an object
 const person = {name: "Alice", age: 25, city: "New York"};
-for (let key in person) {
+for (const key in person) {
     console.log(key);
 }
 
 //2. Write a for...in loop that prints all the values of an object.
 const car = {brand: "Tesla", model: "Model 3", year: 2023};
-for (let key in car) {
+for (const key in car) {
     console.log(car[key]);
 }
 
 //3. Write a for...in loop that prints both keys and values of an object.
 const book = {title: "Harry Potter", author: "J.K. Rowling", year: 1997};
-for (let key in book) {
+for (const key in book) {
     console.log(key, book[key]);
 }
 
@@ -165,7 +165,7 @@ const students = [
 ];
 
 for (const student of students) {
-    for (let key in student) {
+    for (const key in student) {
         console.log(key, student[key]);
     }
 }
