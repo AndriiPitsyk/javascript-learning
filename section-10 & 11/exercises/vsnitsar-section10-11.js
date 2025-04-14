@@ -21,7 +21,7 @@ const firstPromise = new Promise((resolve, reject) => {
 console.log('Text will be displayed before promise results')
 
 //1.2
-const secontPromise = new Promise((resolve, reject) => {
+const secondPromise = new Promise((resolve, reject) => {
     const promiseSucceed = false;
     if (promiseSucceed) {
         resolve(promiseSucceed);
@@ -45,7 +45,7 @@ Modify the following code so that it returns "Success!" after 1 second and print
 
 function asyncTask() {
     return new Promise((resolve, reject) => {
-        const success = false;
+        const success = true;
         if (success) {
             setTimeout(() => {
                 resolve('Success!');
@@ -92,14 +92,8 @@ try {
     console.log(divideNumbersAlternative(2, 4));
     console.log(divideNumbersAlternative(2, 0));
 } catch (err) {
-    console.log('Functiona finished with error:', err.message);
+    console.log('Function finished with error:', err.message);
 }
-
-/*
-Exercise 4:
-Create a function multiplyByTwo(num) that returns a Promise. If num is not a number, reject the Promise; otherwise,
-resolve it by doubling num.
-*/
 
 /*
 Exercise 4:
@@ -174,6 +168,8 @@ async function getUserInfo() {
         console.error(err);
     }
 }
+
+getUserInfo();
 
 /*
 Exercise 7:
@@ -260,3 +256,7 @@ async function fetchUserDataModified() {
 }
 
 await fetchUserDataModified().catch(error => console.log(error));
+
+(async function () {
+    await fetchUserDataModified().catch(error => console.log(error));
+})();
