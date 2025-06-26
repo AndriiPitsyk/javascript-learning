@@ -3,7 +3,6 @@ const currentTemperature = 36;
 const isRaining = true;
 const cityName = 'Kyiv';
 
-
 //Exercise 2:
 Test
 
