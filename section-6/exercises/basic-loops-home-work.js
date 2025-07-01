@@ -2,10 +2,10 @@ console.log("Exercise 1 ");
 // Exercise 1:
 // Write a for loop that calculates the factorial of 5 (5! = 5 × 4 × 3 × 2 × 1).
 let factorial = 1
-for (let i = 1; i <= 5; i++) {
-    factorial = factorial * i;
+for (let i = 5; i > 1; i--) {
+    factorial *=i;
+    console.log(i,factorial);
 }
-console.log(factorial)
 
 console.log("Exercise 2");
 // Exercise 2:
@@ -16,7 +16,7 @@ for (let i = 0; i < numbers.length; i++) {
         console.log('number greater than 50 is found')
         break;
     }
-    console.log(numbers[i])
+    console.log(numbers[i]);
 }
 
 console.log("Exercise 3 ");
@@ -36,12 +36,13 @@ console.log("Exercise 4");
 // - Write a for loop that prints Fibonacci numbers up to 10.
 let a = 0, b = 1;
 
-for (let i = 2; i <= 10; i++) {
+for (let i = 0; i <= 10; i++) {
+    console.log(a);
     let next = a + b
-    console.log(next);
     a = b;
     b = next;
 }
+
 console.log("Exercise 5");
 //Exercise 5:
 // Rewrite the code changing the for loop to while without altering its behavior (the output should stay same).
@@ -156,6 +157,6 @@ const students = [
 for(const student of students){
     console.log(student);
     for (const key in student){
-        console.log(student[key]);
+        console.log(`${key}: ${student[key]}`);
     }
 }
