@@ -11,10 +11,8 @@ const user = {
 };
 function getUserInfo(userInfo) {
     const {firstName, lastName, year, company} = userInfo;
-    console.log(`Hello, my name is ${firstName} ${lastName}, I'm ${year}. I work in ${company} company`);
+    return `Hello, my name is ${firstName} ${lastName}, I'm ${year}. I work in ${company} company`;
 }
-getUserInfo(user);
-
 
 /* Exercise 2:
 Create a global variable counter = 0 and write a function declaration increaseCounter() that increments and logs counter.
@@ -26,15 +24,12 @@ function increaseCounter() {
     console.log(counter);
 }
 increaseCounter();
-// I don't understand 1 moment: "Each time when you execute increaseCounter", but I got each time only '1' in result - what wrong in my understanding?
-
 
 /* Exercise 3:
 What will show console logs in the code bellow ? Think without code execution
-const message = 'Hi User';
  */
 // const message = 'Hi User';
-'Hi User'
+'nothing is presented in the log'
 // function greet() {
 //     const message = 'Hello World';
 // };
