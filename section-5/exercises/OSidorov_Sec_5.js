@@ -5,21 +5,23 @@ Hint: use operator *&&* to check both conditions.
 2. Create a function using *||* operator to check if user position is *student* OR a *senior* to get a discount to the course.
  */
 // 1.
-const validID = true;
-const validAge = false;
-if (validID && validAge) {
-    console.log('User is allowed to enter the club!');
-} else {
-    console.log('User entrance is not allowed!');
+function checkAccess(validID, validAge) {
+    if (validID && validAge >= 18) {
+        console.log('User is allowed to enter the club!');
+    } else {
+        console.log('User entrance is not allowed!');
+    }
 }
+checkAccess('ABC123', 10);
 // 2.
-const isStudent = false;
-const isSenior = true;
-if (isStudent || isSenior) {
-    console.log('User can get discount to the course.');
-} else {
-    console.log('User cannot get discount to the course.');
+function discount(position) {
+    if (position === 'student' || position === 'senior') {
+        console.log('User can get discount to the course.');
+    } else {
+        console.log('User cannot get discount to the course.');
+    }
 }
+discount('student');
 
 /* Exercise 2:
 What will be the result of the code bellow? Think without code execution:
@@ -56,11 +58,11 @@ In this exercises please use *if/else if/ else* statements and logical operators
 function getScore(score) {
     if (score >= 90) {
         return 'A';
-    } else if (score >= 80 && score <= 89) {
+    } else if (score >= 80) {
         return 'B';
-    } else if (score >= 70 && score <= 79) {
+    } else if (score >= 70) {
         return 'C';
-    } else if (score >= 60 && score <= 69) {
+    } else if (score >= 60) {
         return 'D';
     } else {
         return 'Incorrect value';
@@ -92,7 +94,7 @@ Rewrite the following if-else statement using a ternary operator:
 //     console.log("Cool day");
 // }
 const temp = 30;
-temp > 25 ? console.log('Hot day') : console.log('Cool day')
+temp > 25 ? console.log('Hot day') : console.log('Cool day');
 
 /* Exercise 7:
 What will be the result of the code bellow? Think without code execution:
@@ -152,7 +154,7 @@ function updateUser(user) {
 const userOne = { name: "", age: null, premium: true };
 const userTwo = { name: "Alice", age: 25, premium: false };
 updateUser(userOne);
-upateUser(userTwo);
+updateUser(userTwo);
 console.log(userOne);
 /* Expected Output:
 { name: "Guest", age: 18, premium: true }
