@@ -11,7 +11,7 @@ const cityName = 'Kyiv';
 /*Exercise 2:
 What will show console log in the code bellow ? Think without code execution.
 */
-Test
+'nothing in my case'
 
 /*Exercise 3:
 Declare a let variable called messageOne,then in separate line assign a value to the variable, then create another value called messageTwo
@@ -21,7 +21,7 @@ Please think when you create a second variable
 let messageOne;
 messageOne = 'a';
 let messageTwo;
-messageTwo = 'a';
+messageTwo = messageOne;
 console.log(messageOne + ' ' + messageTwo);
 
 /*Exercise 4:
