@@ -5,8 +5,11 @@
 4. Change the last element of animals to "Lion" and print the updated array.
  */
 // 1.
-const arr = [];
-arr.push(10, 20, 30);
+let empty_arr = [];
+empty_arr[0] = 30;
+empty_arr[1] = 20;
+empty_arr[2] = 10;
+console.log(empty_arr);
 // 2.
 const diff_types = ['string', 13, false];
 console.log(diff_types.length);
@@ -31,17 +34,15 @@ const car = {
 };
 console.log(car);
 // 2.
-const car1 = {
-    color : 'black',
-    engine : 'v12',}
-car2 = {...car, ...car1};
-console.log(car2);
+    car['color'] = 'black';
+    car.engine = 'v12';
+console.log(car);
 // 3.
-car2['year'] = 2025;
-console.log(car2);
+car['year'] = 2025;
+console.log(car);
 // 4.
-delete car2.brand;
-console.log(car2);
+delete car.brand;
+console.log(car);
 
 /* Exercise 3:
 Create an array cars with "Toyota", "Ford", "BMW".
@@ -102,9 +103,10 @@ const twelveMonths = [ 'January', 'February', 'March', 'April', 'May', 'June',
 
 From twelveMonths array extract months which are related to autumn in separate array.
  */
-// const twelveMonths = [ 'January', 'February', 'March', 'April', 'May', 'June',
-//     'July', 'August', 'September', 'October', 'November', 'December'];
-console.log(twelveMonths[9], twelveMonths[10], twelveMonths[11]);
+const twelveMonths = [ 'January', 'February', 'March', 'April', 'May', 'June',
+    'July', 'August', 'September', 'October', 'November', 'December'];
+// console.log(twelveMonths[9], twelveMonths[10], twelveMonths[11]);
+console.log(twelveMonths.slice(8,11));
 
 /* Exercise 7:
 You have two arrays
@@ -113,17 +115,20 @@ const fruitsTwo = ["Cherry", "Mango"];
 
 Merge these 2 arrays to one array using all methods which you know;
  */
-// const fruitsOne = ["Apple", "Banana"];
-// const fruitsTwo = ["Cherry", "Mango"];
+const fruitsOne = ["Apple", "Banana"];
+const fruitsTwo = ["Cherry", "Mango"];
 fruits = [...fruitsOne, ...fruitsTwo];
+// fruitsOne.push(fruitsTwo);
 console.log(fruits);
+// console.log(fruitsOne);
+// console.log(fruitsOne.concat(fruitsTwo));
 
 /* Exercise 8:
 1. Merge two objects { a: 1, b: 2 } and { c: 3, d: 4 } to one object;
 2. For the merged object print object keys & object values;
  */
-// const number1 = { a: 1, b: 2 };
-// const number2 = { c: 3, d: 4 };
+const number1 = { a: 1, b: 2 };
+const number2 = { c: 3, d: 4 };
 // 1.
 numbers = {...number1, ...number2};
 // 2.
