@@ -57,9 +57,6 @@ let ii = 0;
 while (ii < 3) {
     console.log( `number ${ii}!` );
     ii++;
-}k >= 1) {
-    console.log(k);
-    k--;
 }
 
 /* Exercise 6:
@@ -68,27 +65,21 @@ while (ii < 3) {
 */
 // 1.
 let k = 10;
-while ( = numbers2[0];
-// my code start
-do {
-    if (numbers2[i] > max) {
-        max = numbers2[i];
-    }
-    i ++;
-} while (i < numbers2.length);
-// my code end
-console.log("Largest number:", max);
+while (k >= 1) {
+    console.log(k);
+    k--;
+}
 
 // 2.
 let num = 1;
-let sum4 = 0;
+let sum = 0;
 while (num <= 5) {
-// my code start
-    sum4 = num + sum4;
-    console.log(sum4);
+    // my code start
+    sum = num + sum;
     num++;
-// my code end
+    // my code end
 }
+console.log(sum);
 
 /* Exercise 7:
 Write a do...while loop that prints only even numbers from 2 to 20.
@@ -104,7 +95,16 @@ Write a do...while loop that finds the largest number in an array.
  */
 const numbers2 = [3, 7, 2, 9, 5, 11, 4];
 let i = 0;
-let max
+let max = numbers2[0];
+// my code start
+do {
+    if (numbers2[i] > max) {
+        max = numbers2[i];
+    }
+    i ++;
+} while (i < numbers2.length);
+// my code end
+console.log("Largest number:", max);
 
 /* Exercise 9:
 Write a for...of loop that sums all the numbers in the array:
@@ -164,13 +164,13 @@ for (const i in book) {
 /* Exercise 12:
 Write a for...of loop that iterates over an array of objects, printing each property of the objects using for...in.
  */
-const students1 = [
+const students = [
     { name: "John", age: 20, grade: "A" },
     { name: "Emma", age: 22, grade: "B" },
     { name: "Michael", age: 21, grade: "A+" }
 ];
 // my code start
-for (const student of students1) {
+for (const student of students) {
     for (const property in student) {
         console.log(`${property}: ${student[property]}`);
     }
@@ -240,7 +240,7 @@ console.log(messages);
 /* Exercise 6:
 Return an array of students who passed scores 50
  */
-const students = [
+const students1 = [
     { name: "Alice", score: 45 },
     { name: "Petr", score: 50 },
     { name: "Bob", score: 80 },
@@ -249,7 +249,7 @@ const students = [
     { name: "Eleanor", score: 39 }
 ];
 // my code start
-const passed = students.filter (
+const passed = students1.filter (
     (pass) => pass.score >= 50
 );
 console.log(passed);
@@ -261,11 +261,11 @@ Use reduce() to sum all numbers in an array.
 const numbers6 = [1, 2, 3, 4, 5, 12, 33];
 // my code start
 const int = 0
-const sum = numbers6.reduce(
+const sum1 = numbers6.reduce(
     (prev, next) => prev + next,
     int
 );
-console.log(sum);
+console.log(sum1);
 // my code end
 
 /* Exercise 8:
