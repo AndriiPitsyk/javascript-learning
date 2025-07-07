@@ -5,14 +5,14 @@
 4. Change the last element of animals to "Lion" and print the updated array.
  */
 // 1.
-let empty_arr = [];
-empty_arr[0] = 30;
-empty_arr[1] = 20;
-empty_arr[2] = 10;
-console.log(empty_arr);
+const emptyArr = [];
+emptyArr[0] = 30;
+emptyArr[1] = 20;
+emptyArr[2] = 10;
+console.log(emptyArr);
 // 2.
-const diff_types = ['string', 13, false];
-console.log(diff_types.length);
+const diffTypes = ['string', 13, false];
+console.log(diffTypes.length);
 // 3.
 const animals = ['ape', 'elephant', 'monkey'];
 console.log(animals[1]);
@@ -127,12 +127,13 @@ console.log(fruits);
 1. Merge two objects { a: 1, b: 2 } and { c: 3, d: 4 } to one object;
 2. For the merged object print object keys & object values;
  */
-const number1 = { a: 1, b: 2 };
-const number2 = { c: 3, d: 4 };
+const objA = { a: 1, b: 2 };
+const objB = { c: 3, d: 4 };
 // 1.
-numbers = {...number1, ...number2};
+const numbsMerged = {...objA, ...objB};
 // 2.
-console.log(Object.entries(numbers));
+console.log("Object Keys:", Object.keys(numbsMerged));
+console.log("Object Values:", Object.values(numbsMerged));
 
 /* Exercise 9:
 Create a car object with properties: brand, model, and year. Destructure brand and model from the car object.
