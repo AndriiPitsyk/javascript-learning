@@ -22,6 +22,7 @@ promiseTwo.then(result => {
     console.log(error);
 })
 
+
 //Exercise 2:
 // Modify the following code so that it returns "Success!" after 1 second and print the result;
 function asyncTask() {
