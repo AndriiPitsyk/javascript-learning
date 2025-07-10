@@ -1,7 +1,7 @@
 console.log("Exercise 1 ");
 // Exercise 1:
 // Write a for loop that calculates the factorial of 5 (5! = 5 × 4 × 3 × 2 × 1).
-let factorial = 1
+let factorial = 1;
 for (let i = 5; i > 1; i--) {
     factorial *=i;
     console.log(i,factorial);
@@ -13,7 +13,7 @@ console.log("Exercise 2");
 const numbers = [10, 20, 30, 60, 40, 50];
 for (let i = 0; i < numbers.length; i++) {
     if (numbers[i] >= 50) {
-        console.log('number greater than 50 is found')
+        console.log('number greater than 50 is found');
         break;
     }
     console.log(numbers[i]);
@@ -28,7 +28,7 @@ for (let i = 0; i < numbersArr.length; i++) {
     if (numbersArr[i] <= 0) {
         continue;
     }
-    console.log(numbers[i])
+    console.log(numbers[i]);
 }
 
 console.log("Exercise 4");
@@ -144,7 +144,6 @@ const book = { title: "Harry Potter", author: "J.K. Rowling", year: 1997 };
 for (const key in book ){
     console.log(key ,book[key]);
 }
-
 console.log("Exercise 12");
 //Exercise 12:
 // Write a for...of loop that iterates over an array of objects, printing each property of the objects using for...in.
