@@ -29,6 +29,7 @@ function asyncTask() {
         setTimeout(() => {
             resolve('Success!');
 
+
         }, 1000);
     });
 }
