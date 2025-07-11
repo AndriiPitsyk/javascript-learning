@@ -80,7 +80,7 @@ let evenNumbers = 2;
 do {
     console.log("Number " + evenNumbers);
     evenNumbers = evenNumbers + 2;
-} while (evenNumbers <= 20)
+} while (evenNumbers <= 20);
 
 console.log("Exercise 8");
 //Exercise 8:
