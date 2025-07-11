@@ -28,13 +28,12 @@ increaseCounter();
 /* Exercise 3:
 What will show console logs in the code bellow ? Think without code execution
  */
-// const message = 'Hi User';
-'nothing is presented in the log'
-// function greet() {
-//     const message = 'Hello World';
-// };
-// console.log(message)
-error cause message is out function;
+const message = 'Hi User';
+function greet() {
+    const message = 'Hello World';
+};
+console.log(message)
+Hi User
 
 
 /* Exercise 4:
@@ -49,11 +48,11 @@ console.log(joinWords('The', 'cat', 'sat', 'on', 'the', 'windowsill', 'purring')
 /* Exercise 5:
 What will show console logs in the code bellow ? Think without code execution
  */
-// const getUserInfo = function(name = 'Default', year = 2000) {
-//     return 'My name is' + ' ' + name + ', I am' + ' ' + year;
-// }
-// console.log(getUserInfo('Test user'));
-// console.log(getUserInfo('Test user two', 2025));
+const getUserInfo = function(name = 'Default', year = 2000) {
+    return 'My name is' + ' ' + name + ', I am' + ' ' + year;
+}
+console.log(getUserInfo('Test user'));
+console.log(getUserInfo('Test user two', 2025));
 'My name is Test user, I am 2000'
 'My name is Test user two, I am 2025'
 
@@ -83,10 +82,10 @@ error, cause userAge is const and in 'if block'
 /* Exercise 8:
 Declare a global object user = { name: "Alice", age: 25 }. Modify its age inside a function and log the object.
  */
-let user1 = { name: "Alice", age: 25 };
+const userAged = { name: "Alice", age: 25 };
 function agedUser() {
-    user1.age ++;
-    console.log(user1);
+    userAged.age ++;
+    console.log(userAged);
 }
 agedUser();
 
