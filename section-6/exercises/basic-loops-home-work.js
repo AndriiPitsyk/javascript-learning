@@ -6,7 +6,6 @@ for (let i = 5; i > 1; i--) {
     factorial *=i;
     console.log(i,factorial);
 }
-
 console.log("Exercise 2");
 // Exercise 2:
 // Modify the loop below to stop when a number greater than 50 is found. Use break here.
