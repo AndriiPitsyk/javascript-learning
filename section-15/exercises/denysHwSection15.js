@@ -33,9 +33,10 @@ console.log(person.celebrateBirthday());
 //     - Have an additional property grade.
 // - Override introduce() to include: "I am in grade [grade]."
 class Student extends Person {
-    constructor(grade) {
-        super()
+    constructor(name, age, grade) {
+        super(name, age);
         this.grade = grade;
+
     }
 
     introduce() {
