@@ -40,7 +40,7 @@ function divideNumbers(a, b) {
         }
         return a / b;
     } catch (error) {
-        console.error("Error:", error);
+        console.error(error.message);
     }
 }
 
@@ -100,13 +100,18 @@ getUserId()
     .catch(console.error);
 
 async function fetchUserinfo() {
-    const userId = await getUserId();
-    const userInfo = await getUserDetails(userId);
-    console.log(userInfo);
+    try {
+        const userId = await getUserId();
+        const userInfo = await getUserDetails(userId);
+        console.log(userInfo);
+    } catch (error) {
+        console.log("Error", error);
+    }
+
 }
 
-const userinfo = fetchUserinfo();
-console.log(userinfo);
+fetchUserinfo();
+
 
 console.log('Exercise 7');
 //Write a function where you will:
@@ -128,7 +133,7 @@ function listUserInfo() {
     return new Promise((resolve, reject) => {
         fetchUsers()
             .then(users => {
-                users.map(user => console.log(user.id, user.name));
+                users.map(user => console.log(user.id, user.name, user.email));
             })
             .catch(error => console.error("Error _________:", error))
     })
