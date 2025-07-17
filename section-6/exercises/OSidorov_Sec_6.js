@@ -26,13 +26,13 @@ for (let i = 0; i < numbers.length; i++) {
 Given an array of numbers, write a loop that skips all negative numbers and prints only positive numbers. Use continue here.
 const numbers = [10, -5, 20, -8, 30, -2];
  */
-const numbers1 = [10, -5, 20, -8, 30, -2];
-for (let i = 0; i < numbers1.length; i++) {
+const numbersOne = [10, -5, 20, -8, 30, -2];
+for (let i = 0; i < numbersOne.length; i++) {
 // my code start
-    if (numbers1[i] < 0) {
+    if (numbersOne[i] < 0) {
         continue;
     }
-    console.log(numbers1[i]);
+    console.log(numbersOne[i]);
 // my code end
 }
 
@@ -53,10 +53,10 @@ Rewrite the code changing the for loop to while without altering its behavior (t
 // for (let i = 0; i < 3; i++) {
 //     console.log( `number ${i}!` );
 // }
-let ii = 0;
-while (ii < 3) {
-    console.log( `number ${ii}!` );
-    ii++;
+let iOne = 0;
+while (iOne < 3) {
+    console.log( `number ${iOne}!` );
+    iOne++;
 }
 
 /* Exercise 6:
@@ -64,10 +64,10 @@ while (ii < 3) {
 2. Write a while loop that calculates the sum of numbers from 1 to 5.
 */
 // 1.
-let k = 10;
-while (k >= 1) {
-    console.log(k);
-    k--;
+let iTwo = 10;
+while (iTwo >= 1) {
+    console.log(iTwo);
+    iTwo--;
 }
 
 // 2.
@@ -84,39 +84,39 @@ console.log(sum);
 /* Exercise 7:
 Write a do...while loop that prints only even numbers from 2 to 20.
  */
-let iii = 2;
-do {console.log(iii);
-    iii = iii + 2;
-} while (iii <= 20) {
+let iThree = 2;
+do {console.log(iThree);
+    iThree = iThree + 2;
+} while (iThree <= 20) {
 }
 
 /* Exercise 8:
 Write a do...while loop that finds the largest number in an array.
  */
-const numbers2 = [3, 7, 2, 9, 5, 11, 4];
+const numbersTwo = [3, 7, 2, 9, 5, 11, 4];
 let i = 0;
-let max = numbers2[0];
+let max = numbersTwo[0];
 // my code start
 do {
-    if (numbers2[i] > max) {
-        max = numbers2[i];
+    if (numbersTwo[i] > max) {
+        max = numbersTwo[i];
     }
     i ++;
-} while (i < numbers2.length);
+} while (i < numbersTwo.length);
 // my code end
 console.log("Largest number:", max);
 
 /* Exercise 9:
 Write a for...of loop that sums all the numbers in the array:
  */
-const numbers3 = [5, 10, 15, 20];
-let sum2 = 0;
+const numbersThree = [5, 10, 15, 20];
+let sumOne = 0;
 // my code start
-for (const number of numbers3) {
-    sum2 = sum2 + number;
+for (const number of numbersThree) {
+    sumOne = sumOne + number;
 }
 // my code end
-console.log("Sum:", sum2);
+console.log("Sum:", sumOne);
 
 /* Exercise: 10
 Write a for...of loop that finds the longest word in an array.
@@ -195,9 +195,9 @@ nums.forEach(function (double) {
 /* Exercise 2:
 Use forEach() to print only the even numbers from an array.
  */
-const numbers4 = [3, 10, 7, 8, 15, 2];
+const numbersFour = [3, 10, 7, 8, 15, 2];
 // my code start
-numbers4.forEach(even => {
+numbersFour.forEach(even => {
     if (even % 2 === 0)
         console.log(even);
     }
@@ -218,9 +218,9 @@ console.log(name);
 /* Exercise 4:
 Use map() to create a new array where each number is doubled.
  */
-const numbers5 = [1, 2, 3, 4, 5];
+const numbersFive = [1, 2, 3, 4, 5];
 // my code start
-const doubled = numbers5.map(i => i * 2);
+const doubled = numbersFive.map(i => i * 2);
 console.log(doubled);
 // my code end
 
@@ -240,7 +240,7 @@ console.log(messages);
 /* Exercise 6:
 Return an array of students who passed scores 50
  */
-const students1 = [
+const studentsOne = [
     { name: "Alice", score: 45 },
     { name: "Petr", score: 50 },
     { name: "Bob", score: 80 },
@@ -249,7 +249,7 @@ const students1 = [
     { name: "Eleanor", score: 39 }
 ];
 // my code start
-const passed = students1.filter (
+const passed = studentsOne.filter (
     (pass) => pass.score >= 50
 );
 console.log(passed);
@@ -258,14 +258,14 @@ console.log(passed);
 /* Exercise 7:
 Use reduce() to sum all numbers in an array.
  */
-const numbers6 = [1, 2, 3, 4, 5, 12, 33];
+const numbersSix = [1, 2, 3, 4, 5, 12, 33];
 // my code start
-const int = 0
-const sum1 = numbers6.reduce(
+const int = 0;
+const sumTwo = numbersSix.reduce(
     (prev, next) => prev + next,
     int
 );
-console.log(sum1);
+console.log(sumTwo);
 // my code end
 
 /* Exercise 8:
