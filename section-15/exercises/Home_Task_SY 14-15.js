@@ -1,5 +1,5 @@
 console.log("Exercise 1")
-class Person1 {
+class PersonOne {
     constructor(name, age) {
         this.name = name;
         this.age = age;
@@ -9,11 +9,11 @@ class Person1 {
         console.log(`Hi, my name is ${this.name} and I am ${this.age} years old.`);
     }
 }
-const person1 = new Person1("Alice", 30);
-person1.introduce();
+const personOne = new PersonOne("Alice", 30);
+personOne.introduce();
 
 console.log("Exercise 2")
-class Person2 {
+class PersonTwo {
     constructor(name, age) {
         this.name = name;
         this.age = age;
@@ -28,10 +28,10 @@ class Person2 {
         console.log(`Happy Birthday! You are now ${this.age} years old.`);
     }
 }
-const person2 = new Person2("Alice", 30);
-person2.introduce();
-person2.celebrateBirthday();
-person2.introduce();
+const personTwo = new PersonTwo("Alice", 30);
+personTwo.introduce();
+personTwo.celebrateBirthday();
+personTwo.introduce();
 
 console.log("Exercise 3")
 class Person {
@@ -105,10 +105,11 @@ class Car extends Vehicle {
     }
 }
 
-const vehicle1 = new Vehicle("Generic Motors");
-vehicle1.accelerate(30);
-vehicle1.brake(10);
-vehicle1.showInfo();
+const vehicleOne = new Vehicle("Generic Motors");
+
+vehicleOne.accelerate(30);
+vehicleOne.brake(10);
+vehicleOne.showInfo();
 
 
 const car1 = new Car("Toyota", "Petrol");
