@@ -112,11 +112,11 @@ vehicleOne.brake(10);
 vehicleOne.showInfo();
 
 
-const car1 = new Car("Toyota", "Petrol");
-car1.accelerate(50);
-car1.signal();
-car1.brake(20);
-car1.showInfo();
+const carOne = new Car("Toyota", "Petrol");
+carOne.accelerate(50);
+carOne.signal();
+carOne.brake(20);
+carOne.showInfo();
 
 
 
