@@ -15,12 +15,6 @@ class Car extends Vehicle {
     }
 }
 
-const car = new Car('Test', 20, 'Electric');
-console.log(car.signal());
-console.log(car.showInfo());
-console.log(car.brake(10));
-console.log(car.accelerate(15));
-
 // In file where class Car is implemented export new instance of class with already defined values
 // (Not class should be imported, instance of class)
-export default new Car('Test', 20, 'Electric');
+export default new Car('Peugeot', 20, 'Petrol');
