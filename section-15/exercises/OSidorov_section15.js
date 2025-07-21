@@ -7,7 +7,6 @@ class Person {
     constructor (name, age) {
         this.name = name;
         this.age = age;
-        console.log();
     }
     introduce() {
         console.log(`Hi, my name is ${this.name} and I am ${this.age} years old.`);
@@ -20,39 +19,39 @@ user.introduce();
 Modify the Person class to include a method celebrateBirthday() that increases the person's age by 1 and logs:
 "Happy Birthday! You are now [age] years old."
  */
-class Person1 {
+class PersonOne {
     constructor (name, age) {
         this.name = name;
         this.age = age;
     }
-    introduce1() {
+    introduceOne() {
         console.log(`Hi, my name is ${this.name} and I am ${this.age} years old.`);
     }
     celebrateBirthday() {
         this.age = this.age + 1;
-        console.log(`Happy Birthday! You are now ${this.age} years old.`)
+        console.log(`Happy Birthday! You are now ${this.age} years old.`);
     }
 }
-const user1 = new Person1('Alex', 39);
-user1.introduce1();
-user1.celebrateBirthday();
+const userOne = new PersonOne('Alex', 39);
+userOne.introduceOne();
+userOne.celebrateBirthday();
 
 /* Exercise 3:
 Create a Student class that inherits from Person. It should:
 - Have an additional property grade.
 - Override introduce() to include: "I am in grade [grade]."
  */
-class Student extends Person1 {
+class Student extends PersonOne {
     constructor (name, age, grade) {
         super(name, age);
         this.grade = grade;
     }
-    introduce2() {
+    introduceTwo() {
         console.log(`Hi, my name is ${this.name} and I am ${this.age} years old. I am in grade ${this.grade}.`);
     }
 }
 const student = new Student('Alex', 15, 10);
-student.introduce2();
+student.introduceTwo();
 student.celebrateBirthday();
 
 /* Exercise 4:
