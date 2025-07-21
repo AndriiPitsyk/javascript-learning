@@ -9,10 +9,10 @@ const promise = new Promise ((resolve) => {
     }, 2000)
 });
 promise.then (() => {
-    console.log('Hello, World!')
+    console.log('Hello, World!');
 })
 // 2.
-const promise1 = new Promise ((resolve, reject) => {
+const promiseOne = new Promise ((resolve, reject) => {
     setTimeout(() => {
         let error = true;
         if (!error) {
@@ -22,7 +22,7 @@ const promise1 = new Promise ((resolve, reject) => {
         }
     }, 3000)
 });
-promise1.then ((response) => console.log(response)).catch((error) => {
+promiseOne.then ((response) => console.log(response)).catch((error) => {
     console.log(error);
 })
 
@@ -51,7 +51,6 @@ function divideNumbers(a, b) {
         return a / b;
     } catch (error) {
         console.log(error.message);
-        return NaN;
     }
 }
 console.log(divideNumbers(10, 0));
@@ -62,7 +61,7 @@ resolve it by doubling num.
  */
 function multiplyByTwo(num) {
     return new Promise((resolve, reject) => {
-        if (typeof num == 'number') {
+        if (typeof num === 'number') {
             resolve(num * 2);
         } else {
             reject(new Error('Only numbers are allowed'));
@@ -131,13 +130,13 @@ getUsers();
 /* Exercise 8:
 Rewrite solution from exercise 7 to async/await flow;
  */
-async function getUsers1() {
+async function getUsersOne() {
     const response = await fetch ('https://jsonplaceholder.typicode.com/users');
     const users = await response.json();
     const newArray = users.map (({ id, name, email }) => ({ id, name, email }));
     console.log(newArray);
 }
-getUsers1();
+getUsersOne();
 
 /* Exercise 9:
 Modify the function below to use async/await and handle errors properly.
