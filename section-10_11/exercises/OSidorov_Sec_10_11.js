@@ -2,7 +2,7 @@
 1. Create a Promise that resolves with "Hello, World!" after 2 seconds and print the message.
 2. Create a Promise that rejects with an error "Something went wrong!" after 3 seconds. Handle the error using .catch().
  */
-// 1.
+1.
 const promise = new Promise ((resolve) => {
     setTimeout(() => {
         resolve();
@@ -104,8 +104,8 @@ async function getUserInfo(){
     } catch (error) {
         console.error(error);
     }
-}
 await getUserInfo();
+}
 
 /* Exercise 7:
 Write a function where you will:
