@@ -28,9 +28,7 @@ promiseTwo.then(result => {
 function asyncTask() {
     return new Promise((resolve) => {
         setTimeout(() => {
-            resolve('Success!');
-
-
+            resolve('Success!')
         }, 1000);
     });
 }
