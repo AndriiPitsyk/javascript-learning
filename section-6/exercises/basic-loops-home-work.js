@@ -19,6 +19,7 @@ for (let i = 0; i < numbers.length; i++) {
 }
 
 
+
 console.log("Exercise 3 ");
 // Exercise 3:
 // Given an array of numbers, write a loop that skips all negative numbers and prints only positive numbers. Use continue here.
