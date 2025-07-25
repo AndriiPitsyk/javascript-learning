@@ -18,8 +18,6 @@ for (let i = 0; i < numbers.length; i++) {
     console.log(numbers[i]);
 }
 
-
-
 console.log("Exercise 3 ");
 // Exercise 3:
 // Given an array of numbers, write a loop that skips all negative numbers and prints only positive numbers. Use continue here.
@@ -43,7 +41,6 @@ for (let i = 0; i <= 10; i++) {
     a = b;
     b = next;
 }
-
 console.log("Exercise 5");
 //Exercise 5:
 // Rewrite the code changing the for loop to while without altering its behavior (the output should stay same).
