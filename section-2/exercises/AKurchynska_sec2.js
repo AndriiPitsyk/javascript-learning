@@ -4,9 +4,9 @@ You are building a weather app. Use a clear and meaningful name of variables to 
 - Whether it’s raining or not
 - The city name*/
 
-let currentTemperature;
-let isRaining;   //not sure
-let cityName;
+const currentTemperature;
+const isRaining;
+const cityName;
 
 /*Exercise 2:
 What will show console log in the code bellow ? Think without code execution.
@@ -26,7 +26,7 @@ Please think when you create a second variable*/
 let messageOne;
 messageOne =  'First message';
 
-let messageTwo = messageOne.valueOf();
+const messageTwo = messageOne.valueOf();
 
 console.log(messageOne);
 console.log(messageTwo);
@@ -49,7 +49,7 @@ Given const text = "Hello World!", perform the following:
 
 console.log(text.toLowerCase());
 console.log(text.includes('Hello'));
-console.log(text.replace('World',''));
+console.log(text.substring(0, 6) + text.substring(11));
 
 /*Exercise 6:
 Create a variables with appropriate name where values should be: John, 25
@@ -58,7 +58,7 @@ using variables.*/
 
 const firstName = 'John';
 const age = '25';
-let text =`Hello, my name is ${firstName} and I'm ${age} years old`;
+const text =`Hello, my name is ${firstName} and I'm ${age} years old`;
 
 
 

@@ -91,7 +91,7 @@ const calculator = {
     numTwo: 102
 };
 calculator.add = function() {
-    console.log(calculator.numOne + calculator.numTwo);
+    console.log(this.numOne + this.numTwo);
 };
 calculator.add();
 
