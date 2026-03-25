@@ -54,7 +54,10 @@ console.log(upperStudents);
 /*Exercise 7:
 Use reduce() to sum all numbers in an array.*/
 const numbers = [1, 2, 3, 4, 5, 12, 33];
-// Your code here
+
+const sum = numbers.reduce(function (acc,number) {
+    return acc + number;
+});
 
 /*Exercise 8:
 Use reduce() to calculate the total price of all products in a shopping cart.*/
